@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter-box">
+            <div class="header">
+                <h1>Currency Converter</h1>
+                <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+            </div>
+            <div class="input-box">
+                <input type="number" id="amount" placeholder="Enter amount" class="amount-input">
+                <div class="currency-select">
+                    <select id="from-currency" class="currency-dropdown"></select>
+                    <span>To</span>
+                    <select id="to-currency" class="currency-dropdown"></select>
+                </div>
+                <button id="convert-btn" class="convert-btn">Convert</button>
+            </div>
+            <div id="loading" class="loading">Loading...</div>
+            <div id="error" class="error-message">Error fetching rates. Try again.</div>
+            <div id="result" class="result">Converted Amount: </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
